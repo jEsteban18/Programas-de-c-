@@ -1,0 +1,17 @@
+using namespace std;
+/* programa para crear un menu */
+
+int main() {
+	int opc;
+	cout <<"MENU\n. uno\n. dos\n";
+	cin >> opc;
+	switch (opc){
+	case 1: cout << "uno";
+		break;
+	case 2: cout << "dos";
+		break;
+	default: cout <<"opcion no valida";
+		break;
+	}
+	
+	return 0;
