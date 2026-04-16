@@ -1,3 +1,5 @@
+/*Programa para jugar con la maquina, pidiendole al usuario 
+con que numeros quiere jugar y con cuantos lanzamientos*/
 #include <iostream>
 #include <time.h>
 using namespace std;
@@ -19,7 +21,7 @@ int main() {
 		cout << "Generando dados...\n";
 		
 	for (int x = 0;x < veces; x++){
-		dado = rand()%(6  + 1);
+		dado = rand()%6  + 1;
 		cout << dado << "\n";
 		if ((dado == 1 or dado == 2 or dado == 3) ){
 			
