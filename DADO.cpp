@@ -30,9 +30,11 @@ int main() {
 	}
 	if (contador > veces / 2) {
 		cout << ".....Ganaste, super....\n";
-	} else if (contador == veces / 2) {
+	}
+	if (contador == veces / 2) {
 		cout << "......Empate.....\n";
-	} else {
+	} 
+	else {
 		cout << "....Perdiste jaja ....\n";
 	}
 	
@@ -52,9 +54,11 @@ int main() {
 	}
 		if (contador > veces / 2) {
 			cout << "...Ganaste super.... \n";
-		} else if (contador == veces / 2) {
+		} 
+		if (contador == veces / 2) {
 			cout << "....Empate.\n..";
-		} else {
+		} 
+		else {
 			cout << "...Perdiste jajaj....\n";
 	}
 	}
