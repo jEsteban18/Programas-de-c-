@@ -6,7 +6,7 @@ using namespace std;
 3 consignar
 4 salir*/
 int main() {
-	int x = 500000, opc, n, cons,cons1, y  ;
+	int x = 10000, opc, n, cons = 0 ,cons1, y  ;
 
 	cout << "......CAJERO....\n";
 
@@ -18,23 +18,28 @@ do {
 	case 1: 
 		cout << "Escogiste consultar saldo\n ";
 		cout << "tu saldo es:\n ";
-		cout << x; 
+		cout << x << "\n"; 
 		break;
 	case 2: 
 		cout << "Escogiste retirar saldo\n ";
 		cout << "cuanto deseas retirar:\n ";
 		cin >> y;
-		n = x - y;
+		if (y > x ){
+			cout << "saldo insuficiente\n";
+		}
+		else {
+			x = x - y;
+		}
 		cout <<  "tu saldo es:\n ";
-		cout << n; 
+		cout << x << "\n"; 
 		break;
 	case 3: 
 		cout << "Escogiste consignar saldo\n ";
 		cout << "cuanto deseas consignar \n";
 		cin >> cons;
-		cons1 = cons + y ;
+		x = cons + x ;
 		cout << "tu saldo es: \n";
-		cout << cons1; 
+		cout << x; 
 		break;
 	}
 } while ( opc != 4 );
