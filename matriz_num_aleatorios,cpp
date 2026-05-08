@@ -1,0 +1,39 @@
+/* arreglos bidimensionales u matrizes 
+estrutura de una matriz 
+tipo}_de_dato nombre_de_la_variable[f][c]
+el ciclo externo maneja las filas 
+el ciclo interno maneja las columnas
+*/
+
+
+#include <iostream>
+#define t1 2
+#define t2 3
+#include <time.h> 
+using namespace std;
+int v1, v2,ale,organizador;
+int main(int argc, char *argv[]) {
+	cout << "digite valores inicial\n y valor final : \n";
+	cin >> v1;
+	cin >> v2;
+	srand(time (NULL));
+	if (v1 > v2){
+		organizador = v2; 
+		v2  = v1;
+		v1 = organizador;
+		
+	} 
+	int matriz[t1][t2];
+	for(int x = 0; x < t1;x++){
+		for (int y = 0;y < t2; y++){
+			ale = rand()%(v2 - v1 +1) +v1;
+			matriz [x][y]=ale;
+			cout << matriz[x][y]<< "\t";
+			
+		}
+		cout << endl;
+	}
+	
+	return 0;
+}
+
